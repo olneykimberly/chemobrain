@@ -1,6 +1,6 @@
 pathToRef <- "/tgen_labs/jfryer/projects/references/mouse/"
 # Read in annotation file
-gtf.file <- paste0(pathToRef, "Mus_musculus.GRCm39.107.gtf")
+gtf.file <- paste0(pathToRef, "refdata-gex-GRCm39-2024-A/genes/genes.gtf")
 gtf.gr <- rtracklayer::import(gtf.file)
 # save gtf as data frame
 gtf.df <- as.data.frame(gtf.gr)
@@ -10,7 +10,7 @@ genes <-
              "width",
              "gene_id",
              "gene_name",
-             "gene_biotype",
+             "gene_type", 
              "type")]
 # Up date naming these columns using the correct column information.
 names(genes)[names(genes) == "seqnames"] <- "Chr"
@@ -24,7 +24,7 @@ genes <- subset(genes, type == "gene")
 # saveRDS(protein_coding_genes$gene_name, file = paste0("../rObjects/gene_options.rds"))
 write.table(
   genes,
-  "/tgen_labs/jfryer/kolney/chemobrain/ensembl_mouse_protein_coding_genes.txt",
+  "/tgen_labs/jfryer/kolney/chemobrain/ensembl_mouse_genes.txt",
   sep = "\t",
   row.names = FALSE,
   quote = FALSE

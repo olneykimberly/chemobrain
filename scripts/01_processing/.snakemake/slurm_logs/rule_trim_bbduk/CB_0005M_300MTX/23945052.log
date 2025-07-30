@@ -1,0 +1,99 @@
+host: g-c-1-7-29
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided remote nodes: 1
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul 28 15:49:00 2025]
+rule trim_bbduk:
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0005M_300MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=19977, disk_mib=19052, tmpdir=<TBD>, mem=128, time=01:30:00, threads=8
+host: g-c-1-7-29
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Jul 28 15:49:01 2025]
+localrule trim_bbduk:
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0005M_300MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=19977, disk_mib=19052, tmpdir=/tmp, mem=128, time=01:30:00, threads=8
+java -ea -Xmx124891m -Xms124891m -cp /tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/opt/bbmap-39.33-0/current/ jgi.BBDuk in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+Executing jgi.BBDuk [in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz, out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz, ref=/tgen_labs/jfryer/projects/references/adapters.fa,, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo]
+Version 39.33
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.220 seconds.
+Initial:
+Memory: max=126593m, total=126593m, free=123101m, used=3492m
+
+Added 6879 kmers; time: 	0.620 seconds.
+Memory: max=126593m, total=126593m, free=116815m, used=9778m
+
+Input is being processed as paired
+Started output streams:	0.304 seconds.
+/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin/bbduk.sh: line 399: 1031465 Killed                  java -ea -Xmx124891m -Xms124891m -cp /tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/opt/bbmap-39.33-0/current/ jgi.BBDuk in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+RuleException:
+CalledProcessError in file "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 53:
+Command 'set -euo pipefail;  bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo' returned non-zero exit status 137.
+[Mon Jul 28 15:50:22 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Removing output files of failed job trim_bbduk since they might be corrupted:
+../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Mon Jul 28 15:50:22 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Storing output in storage.
+WorkflowError:
+At least one job did not complete successfully.
+slurmstepd: error: Detected 1 oom_kill event in StepId=23945052.0. Some of the step tasks have been OOM Killed.
+srun: error: g-c-1-7-29: task 0: Out Of Memory
+[Mon Jul 28 15:50:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Mon Jul 28 15:50:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Storing output in storage.
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,101 @@
+host: g-c-1-4-20
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided remote nodes: 1
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Jul 29 11:40:03 2025]
+rule STAR_paired:
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0005M_300MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=19298, disk_mib=18405, tmpdir=<TBD>, mem_gb=64, walltime=03:30:00, threads=8
+host: g-c-1-4-20
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Jul 29 11:40:05 2025]
+localrule STAR_paired:
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0005M_300MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=19298, disk_mib=18405, tmpdir=/tmp, mem_gb=64, walltime=03:30:00, threads=8
+	/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin/STAR-avx2 --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam
+	STAR version: 2.7.11b   compiled: 2025-07-24T03:06:21+0000 :/opt/conda/conda-bld/star_1753326220084/work/source
+Jul 29 11:40:05 ..... started STAR run
+Jul 29 11:40:05 ..... loading genome
+/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin/STAR: line 8: 1445057 Killed                  "${cmd}" "$@"
+RuleException:
+CalledProcessError in file "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 115:
+Command 'set -euo pipefail;  
+		STAR --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam;
+		mv ../../starAligned/CB_0005M_300MTX_STAR.bamAligned.out.bam ../../starAligned/CB_0005M_300MTX_STAR.bam' returned non-zero exit status 137.
+[Tue Jul 29 11:42:54 2025]
+Error in rule STAR_paired:
+    message: None
+    jobid: 0
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam;
+		mv ../../starAligned/CB_0005M_300MTX_STAR.bamAligned.out.bam ../../starAligned/CB_0005M_300MTX_STAR.bam
+		
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Jul 29 11:42:54 2025]
+Error in rule STAR_paired:
+    message: None
+    jobid: 0
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam;
+		mv ../../starAligned/CB_0005M_300MTX_STAR.bamAligned.out.bam ../../starAligned/CB_0005M_300MTX_STAR.bam
+		
+        (command exited with non-zero exit code)
+Storing output in storage.
+WorkflowError:
+At least one job did not complete successfully.
+slurmstepd: error: Detected 1 oom_kill event in StepId=23951804.0. Some of the step tasks have been OOM Killed.
+srun: error: g-c-1-4-20: task 0: Out Of Memory
+[Tue Jul 29 11:42:54 2025]
+Error in rule STAR_paired:
+    message: None
+    jobid: 0
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam;
+		mv ../../starAligned/CB_0005M_300MTX_STAR.bamAligned.out.bam ../../starAligned/CB_0005M_300MTX_STAR.bam
+		
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Jul 29 11:42:54 2025]
+Error in rule STAR_paired:
+    message: None
+    jobid: 0
+    input: ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz
+    output: ../../starAligned/CB_0005M_300MTX_STAR.bam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --twopassMode Basic --quantMode TranscriptomeSAM GeneCounts --readFilesCommand zcat --readFilesIn ../../trimmedReads/CB_0005M_300MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0005M_300MTX_trimmed_R2.fastq.gz --outSAMtype BAM Unsorted --outFileNamePrefix ../../starAligned/CB_0005M_300MTX_STAR.bam;
+		mv ../../starAligned/CB_0005M_300MTX_STAR.bamAligned.out.bam ../../starAligned/CB_0005M_300MTX_STAR.bam
+		
+        (command exited with non-zero exit code)
+Storing output in storage.
+WorkflowError:
+At least one job did not complete successfully.

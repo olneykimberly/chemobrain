@@ -1,0 +1,225 @@
+{
+    "Commment_Input_Output_Directories": "This section specifies the input and output directories for scripts",
+    "rawReads" : "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+    "rawQC" : "../../rawQC/",
+    "trimmedReads" : "../../trimmedReads/",
+    "trimmedQC" : "../../trimmedQC/",
+    "starAligned" : "../../starAligned/",
+    "bamstats" : "../../bamstats/",
+
+    "Comment_Reference" : "This section specifies the location of the mouse, Ensembl reference genome",
+    "Mmusculus.fa" : "/tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/fasta/genome",
+    "Mmusculus.gtf" : "/tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes",
+    "star_ref_index" : "/tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb",
+
+    "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
+    "sample_names": ['CB_0001M_Saline', 'CB_0002M_Saline', 'CB_0003M_150MTX', 'CB_0004M_150MTX', 'CB_0005M_300MTX', 'CB_0006M_300MTX', 'CB_0007M_450MTX', 'CB_0008M_450MTX', 'CB_0015F_Saline', 'CB_0016F_Saline', 'CB_0017F_150MTX', 'CB_0019F_300MTX', 'CB_0020F_300MTX', 'CB_0021F_450MTX', 'CB_0022F_450MTX'],
+
+    "CB_0001M_Saline":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0001M_1_BR_Saline_C1_WGMRS_A36166_23377MLT3_GTACAACGAA_L002_R1_001",
+        "fq2": "CB_0001M_1_BR_Saline_C1_WGMRS_A36166_23377MLT3_GTACAACGAA_L002_R2_001",
+        "fq_R1": "CB_0001M_Saline_R1",
+        "fq_R2": "CB_0001M_Saline_R2",
+        "ID": "CB_0001M_Saline",
+        "SM": "CB_0001M_Saline",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0001M_Saline",
+        "PL": "Illumina"
+        },
+
+    "CB_0002M_Saline":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0002M_1_BR_Saline_C1_WGMRS_A36167_23377MLT3_TCGTCATCTT_L002_R1_001",
+        "fq2": "CB_0002M_1_BR_Saline_C1_WGMRS_A36167_23377MLT3_TCGTCATCTT_L002_R2_001",
+        "fq_R1": "CB_0002M_Saline_R1",
+        "fq_R2": "CB_0002M_Saline_R2",
+        "ID": "CB_0002M_Saline",
+        "SM": "CB_0002M_Saline",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0002M_Saline",
+        "PL": "Illumina"
+        },
+
+    "CB_0003M_150MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0003M_1_BR_150MTX_C1_WGMRS_A36170_23377MLT3_CCTGACAGAG_L002_R1_001",
+        "fq2": "CB_0003M_1_BR_150MTX_C1_WGMRS_A36170_23377MLT3_CCTGACAGAG_L002_R2_001",
+        "fq_R1": "CB_0003M_150MTX_R1",
+        "fq_R2": "CB_0003M_150MTX_R2",
+        "ID": "CB_0003M_150MTX",
+        "SM": "CB_0003M_150MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0003M_150MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0004M_150MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0004M_1_BR_150MTX_C1_WGMRS_A36171_23377MLT3_TGTGGTATAC_L002_R1_001",
+        "fq2": "CB_0004M_1_BR_150MTX_C1_WGMRS_A36171_23377MLT3_TGTGGTATAC_L002_R2_001",
+        "fq_R1": "CB_0004M_150MTX_R1",
+        "fq_R2": "CB_0004M_150MTX_R2",
+        "ID": "CB_0004M_150MTX",
+        "SM": "CB_0004M_150MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0004M_150MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0005M_300MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R1_001",
+        "fq2": "CB_0005M_1_BR_300MTX_C1_WGMRS_A36174_23377MLT3_GCCGAACCAA_L002_R2_001",
+        "fq_R1": "CB_0005M_300MTX_R1",
+        "fq_R2": "CB_0005M_300MTX_R2",
+        "ID": "CB_0005M_300MTX",
+        "SM": "CB_0005M_300MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0005M_300MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0006M_300MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0006M_1_BR_300MTX_C1_WGMRS_A36175_23377MLT3_TGTCAAGCGT_L002_R1_001",
+        "fq2": "CB_0006M_1_BR_300MTX_C1_WGMRS_A36175_23377MLT3_TGTCAAGCGT_L002_R2_001",
+        "fq_R1": "CB_0006M_300MTX_R1",
+        "fq_R2": "CB_0006M_300MTX_R2",
+        "ID": "CB_0006M_300MTX",
+        "SM": "CB_0006M_300MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0006M_300MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0007M_450MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0007M_1_BR_450MTX_C1_WGMRS_A36178_23377MLT3_ACATCGGCCT_L002_R1_001",
+        "fq2": "CB_0007M_1_BR_450MTX_C1_WGMRS_A36178_23377MLT3_ACATCGGCCT_L002_R2_001",
+        "fq_R1": "CB_0007M_450MTX_R1",
+        "fq_R2": "CB_0007M_450MTX_R2",
+        "ID": "CB_0007M_450MTX",
+        "SM": "CB_0007M_450MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0007M_450MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0008M_450MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0008M_1_BR_450MTX_C1_WGMRS_A36179_23377MLT3_GGTCCTCAGA_L002_R1_001",
+        "fq2": "CB_0008M_1_BR_450MTX_C1_WGMRS_A36179_23377MLT3_GGTCCTCAGA_L002_R2_001",
+        "fq_R1": "CB_0008M_450MTX_R1",
+        "fq_R2": "CB_0008M_450MTX_R2",
+        "ID": "CB_0008M_450MTX",
+        "SM": "CB_0008M_450MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0008M_450MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0015F_Saline":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0015F_1_BR_Saline_C1_WGMRS_A36168_23377MLT3_TTGAGTGCGG_L002_R1_001",
+        "fq2": "CB_0015F_1_BR_Saline_C1_WGMRS_A36168_23377MLT3_TTGAGTGCGG_L002_R2_001",
+        "fq_R1": "CB_0015F_Saline_R1",
+        "fq_R2": "CB_0015F_Saline_R2",
+        "ID": "CB_0015F_Saline",
+        "SM": "CB_0015F_Saline",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0015F_Saline",
+        "PL": "Illumina"
+        },
+
+    "CB_0016F_Saline":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0016F_1_BR_Saline_C1_WGMRS_A36169_23377MLT3_CTAGGCTAGA_L002_R1_001",
+        "fq2": "CB_0016F_1_BR_Saline_C1_WGMRS_A36169_23377MLT3_CTAGGCTAGA_L002_R2_001",
+        "fq_R1": "CB_0016F_Saline_R1",
+        "fq_R2": "CB_0016F_Saline_R2",
+        "ID": "CB_0016F_Saline",
+        "SM": "CB_0016F_Saline",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0016F_Saline",
+        "PL": "Illumina"
+        },
+
+    "CB_0017F_150MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0017F_1_BR_150MTX_C1_WGMRS_A36172_23377MLT3_CTTAAGTGAC_L002_R1_001",
+        "fq2": "CB_0017F_1_BR_150MTX_C1_WGMRS_A36172_23377MLT3_CTTAAGTGAC_L002_R2_001",
+        "fq_R1": "CB_0017F_150MTX_R1",
+        "fq_R2": "CB_0017F_150MTX_R2",
+        "ID": "CB_0017F_150MTX",
+        "SM": "CB_0017F_150MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0017F_150MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0018F_150MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001",
+        "fq2": "CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001",
+        "fq_R1": "CB_0018F_150MTX_R1",
+        "fq_R2": "CB_0018F_150MTX_R2",
+        "ID": "CB_0018F_150MTX",
+        "SM": "CB_0018F_150MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0018F_150MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0019F_300MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0019F_1_BR_300MTX_C1_WGMRS_A36176_23377MLT3_CTTGGCAGTG_L002_R1_001",
+        "fq2": "CB_0019F_1_BR_300MTX_C1_WGMRS_A36176_23377MLT3_CTTGGCAGTG_L002_R2_001",
+        "fq_R1": "CB_0019F_300MTX_R1",
+        "fq_R2": "CB_0019F_300MTX_R2",
+        "ID": "CB_0019F_300MTX",
+        "SM": "CB_0019F_300MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0019F_300MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0020F_300MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0020F_1_BR_300MTX_C1_WGMRS_A36177_23377MLT3_GCAATGTCGG_L002_R1_001",
+        "fq2": "CB_0020F_1_BR_300MTX_C1_WGMRS_A36177_23377MLT3_GCAATGTCGG_L002_R2_001",
+        "fq_R1": "CB_0020F_300MTX_R1",
+        "fq_R2": "CB_0020F_300MTX_R2",
+        "ID": "CB_0020F_300MTX",
+        "SM": "CB_0020F_300MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0020F_300MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0021F_450MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0021F_1_BR_450MTX_C1_WGMRS_A36180_23377MLT3_TGCGGATCTG_L002_R1_001",
+        "fq2": "CB_0021F_1_BR_450MTX_C1_WGMRS_A36180_23377MLT3_TGCGGATCTG_L002_R2_001",
+        "fq_R1": "CB_0021F_450MTX_R1",
+        "fq_R2": "CB_0021F_450MTX_R2",
+        "ID": "CB_0021F_450MTX",
+        "SM": "CB_0021F_450MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0021F_450MTX",
+        "PL": "Illumina"
+        },
+
+    "CB_0022F_450MTX":{
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq1": "CB_0022F_1_BR_450MTX_C1_WGMRS_A36181_23377MLT3_CAGCTGCTTC_L002_R1_001",
+        "fq2": "CB_0022F_1_BR_450MTX_C1_WGMRS_A36181_23377MLT3_CAGCTGCTTC_L002_R2_001",
+        "fq_R1": "CB_0022F_450MTX_R1",
+        "fq_R2": "CB_0022F_450MTX_R2",
+        "ID": "CB_0022F_450MTX",
+        "SM": "CB_0022F_450MTX",
+        "PU": "23377MLT3.2",
+        "LB": "CB_0022F_450MTX",
+        "PL": "Illumina"
+        }
+}

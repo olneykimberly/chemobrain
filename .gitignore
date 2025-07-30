@@ -1,0 +1,6 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+scripts/01_processing/slurm.*
+scripts/01_processing/.snakemake*

@@ -1,0 +1,172 @@
+host: g-c-1-4-16
+Building DAG of jobs...
+../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz: True 0
+shared_storage_local_copies: True
+remote_exec: True
+Submitting maximum 100 job(s) over 1.0 second(s).
+Using shell: /usr/bin/bash
+Provided remote nodes: 1
+Resources before job selection: {'_cores': 9223372036854775807, '_nodes': 1, '_job_count': 9223372036854775807}
+Ready jobs: 1
+Select jobs to execute...
+Selecting jobs to run using greedy solver.
+Selected jobs: 1
+Resources after job selection: {'_cores': 9223372036854775806, '_nodes': 0, '_job_count': 100}
+Execute 1 jobs...
+
+[Mon Jul 28 16:18:20 2025]
+rule trim_bbduk:
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0018F_150MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=28193, disk_mib=26887, tmpdir=<TBD>, mem_gb=64, walltime=01:30:00, threads=8
+General args: ['--force', '--target-files-omit-workdir-adjustment', '', '--max-inventory-time 0', '--nocolor', '--notemp', '--no-hooks', '--nolock', '--ignore-incomplete', '', '--verbose ', '--rerun-triggers code input mtime software-env params', '', '', '', '', "--conda-frontend 'conda'", '', '', '', '', '', '--shared-fs-usage software-deployment source-cache sources storage-local-copies persistence input-output', '', "--wrapper-prefix 'https://github.com/snakemake/snakemake-wrappers/raw/'", '', '', '', '', '', '--latency-wait 15', "--scheduler 'ilp'", '', '--local-storage-prefix base64//LnNuYWtlbWFrZS9zdG9yYWdl', "--scheduler-solver-path '/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin'", '', '', '', '', '', '', '--default-resources base64//bWVtX21iPW1pbihtYXgoMippbnB1dC5zaXplX21iLCAxMDAwKSwgODAwMCk= base64//ZGlza19tYj1tYXgoMippbnB1dC5zaXplX21iLCAxMDAwKSBpZiBpbnB1dCBlbHNlIDUwMDAw base64//dG1wZGlyPXN5c3RlbV90bXBkaXI=']
+This job is a group job: False
+The call for this job is: srun -n1 --cpu-bind=q  --cpus-per-task=1  /tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin/python3.12 -m snakemake --snakefile '/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile' --target-jobs 'trim_bbduk:sample=CB_0018F_150MTX' --allowed-rules trim_bbduk --cores 'all' --attempt 1 --force-use-threads  --force --target-files-omit-workdir-adjustment --max-inventory-time 0 --nocolor --notemp --no-hooks --nolock --ignore-incomplete --verbose  --rerun-triggers code input mtime software-env params --conda-frontend 'conda' --shared-fs-usage software-deployment source-cache sources storage-local-copies persistence input-output --wrapper-prefix 'https://github.com/snakemake/snakemake-wrappers/raw/' --latency-wait 15 --scheduler 'ilp' --local-storage-prefix base64//LnNuYWtlbWFrZS9zdG9yYWdl --scheduler-solver-path '/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin' --default-resources base64//bWVtX21iPW1pbihtYXgoMippbnB1dC5zaXplX21iLCAxMDAwKSwgODAwMCk= base64//ZGlza19tYj1tYXgoMippbnB1dC5zaXplX21iLCAxMDAwKSBpZiBpbnB1dCBlbHNlIDUwMDAw base64//dG1wZGlyPXN5c3RlbV90bXBkaXI= --mode 'remote'
+Job is running on host: g-c-1-4-16
+host: g-c-1-4-16
+Building DAG of jobs...
+../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz: True 0
+shared_storage_local_copies: True
+remote_exec: True
+Submitting maximum 100 job(s) over 1.0 second(s).
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775807, '_job_count': 9223372036854775807}
+Ready jobs: 1
+Select jobs to execute...
+Selecting jobs to run using greedy solver.
+Selected jobs: 1
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806, '_job_count': 100}
+Execute 1 jobs...
+
+[Mon Jul 28 16:18:22 2025]
+localrule trim_bbduk:
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    jobid: 0
+    reason: Forced execution
+    wildcards: sample=CB_0018F_150MTX
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=28193, disk_mib=26887, tmpdir=/tmp, mem_gb=64, walltime=01:30:00, threads=8
+Waiting for running jobs to complete.
+java -ea -Xmx102464m -Xms102464m -cp /tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/opt/bbmap-39.33-0/current/ jgi.BBDuk in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+Executing jgi.BBDuk [in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz, out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz, ref=/tgen_labs/jfryer/projects/references/adapters.fa,, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo]
+Version 39.33
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.037 seconds.
+Initial:
+Memory: max=103859m, total=103859m, free=100994m, used=2865m
+
+Added 6879 kmers; time: 	0.082 seconds.
+Memory: max=103859m, total=103859m, free=95837m, used=8022m
+
+Input is being processed as paired
+Started output streams:	0.084 seconds.
+/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/bin/bbduk.sh: line 399: 676095 Killed                  java -ea -Xmx102464m -Xms102464m -cp /tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/opt/bbmap-39.33-0/current/ jgi.BBDuk in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+Full Traceback (most recent call last):
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/executors/local.py", line 425, in run_wrapper
+    run(
+  File "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 95, in __rule_trim_bbduk
+    mv {params.fq2_prefix}_fastqc.zip {output.fq2_zip}
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/shell.py", line 358, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo' returned non-zero exit status 137.
+
+Full Traceback (most recent call last):
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/executors/local.py", line 425, in run_wrapper
+    run(
+  File "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 95, in __rule_trim_bbduk
+    mv {params.fq2_prefix}_fastqc.zip {output.fq2_zip}
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/shell.py", line 358, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo' returned non-zero exit status 137.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/executors/local.py", line 247, in cached_or_run
+    run_func(*args)
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/executors/local.py", line 461, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 53:
+Command 'set -euo pipefail;  bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo' returned non-zero exit status 137.
+
+RuleException:
+CalledProcessError in file "/tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/Snakefile", line 53:
+Command 'set -euo pipefail;  bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo' returned non-zero exit status 137.
+[Mon Jul 28 16:19:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Removing output files of failed job trim_bbduk since they might be corrupted:
+../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Mon Jul 28 16:19:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Storing output in storage.
+Full Traceback (most recent call last):
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/cli.py", line 2165, in args_to_api
+    dag_api.execute_workflow(
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/api.py", line 603, in execute_workflow
+    workflow.execute(
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/workflow.py", line 1451, in execute
+    raise WorkflowError("At least one job did not complete successfully.")
+snakemake_interface_common.exceptions.WorkflowError: At least one job did not complete successfully.
+
+WorkflowError:
+At least one job did not complete successfully.
+slurmstepd: error: Detected 1 oom_kill event in StepId=23945334.0. Some of the step tasks have been OOM Killed.
+srun: error: g-c-1-4-16: task 0: Out Of Memory
+[Mon Jul 28 16:19:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Waiting for running jobs to complete.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Mon Jul 28 16:19:23 2025]
+Error in rule trim_bbduk:
+    message: None
+    jobid: 0
+    input: /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz, /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz
+    output: ../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz, ../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz
+    shell:
+        bbduk.sh in1=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R1_001.fastq.gz in2=/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/CB_0018F_1_BR_150MTX_C1_WGMRS_A36173_23377MLT3_CACAATCTCT_L002_R2_001.fastq.gz out1=../../trimmedReads/CB_0018F_150MTX_trimmed_R1.fastq.gz out2=../../trimmedReads/CB_0018F_150MTX_trimmed_R2.fastq.gz ref=/tgen_labs/jfryer/projects/references/adapters.fa, literal=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG ktrim=r k=23 mink=11 hdist=1 tpe tbo
+        (command exited with non-zero exit code)
+Storing output in storage.
+Full Traceback (most recent call last):
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/cli.py", line 2165, in args_to_api
+    dag_api.execute_workflow(
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/api.py", line 603, in execute_workflow
+    workflow.execute(
+  File "/tgen_labs/jfryer/kolney/tools/miniconda3/envs/chemobrain/lib/python3.12/site-packages/snakemake/workflow.py", line 1451, in execute
+    raise WorkflowError("At least one job did not complete successfully.")
+snakemake_interface_common.exceptions.WorkflowError: At least one job did not complete successfully.
+
+WorkflowError:
+At least one job did not complete successfully.
