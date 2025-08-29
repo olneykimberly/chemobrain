@@ -36,8 +36,9 @@ saveToPDF <- function(...) {
 }
 
 #----------------- Data
-metadata <- read.delim("/tgen_labs/jfryer/kolney/chemobrain/metadata.tsv", header = TRUE, sep = "\t")
-# Update SampleID
-metadata$SampleID <- sub("WGMRS.*", "WGMRS", metadata$SampleID)
+metadata <- read.delim("/tgen_labs/jfryer/kolney/chemobrain/metadata_1MPI.tsv", header = TRUE, sep = "\t")
+# Update Sample_ID
+#metadata$Sample_ID <- sub("MTX_LEUC", "MTXLEUC", metadata$Sample_ID)
 
-metadata <- metadata[metadata$Study_Specimen_ID != "CBP_16_F_Saline", ]
+# Exclude samples 
+# metadata <- metadata[metadata$Study_Specimen_ID != "CBP_16_F_Saline",] #

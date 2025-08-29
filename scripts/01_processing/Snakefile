@@ -16,6 +16,9 @@ salmon_path = "salmon"
 
 rule all:
         input:
+        	expand(config["rawQC"]+"{sample}_fq1_fastqc.html", sample = config["sample_names"]),
+        	expand(config["rawQC"]+"{sample}_fq2_fastqc.html", sample = config["sample_names"]),
+        
         	expand(config["trimmedReads"]+"{sample}_trimmed_R1.fastq.gz", sample = config["sample_names"]),
         	expand(config["trimmedReads"]+"{sample}_trimmed_R2.fastq.gz", sample = config["sample_names"]),
         	
@@ -30,6 +33,37 @@ rule all:
 # Ensembl refdata-gex-GRCm39-2024-A fasta
 # 	wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCm39-2024-A.tar.gz
 # STAR --runMode genomeGenerate --runThreadN 8 --genomeDir refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb  --genomeFastaFiles /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/fasta/genome.fa --sjdbGTFfile /tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf --sjdbOverhang 150
+#---------------------
+#rule fastqc on raw:
+#---------------------
+rule raw_fastqc:
+	input:
+		fq1 = lambda wildcards: config[wildcards.sample]["fq_path"] + config[wildcards.sample]["fq1"] + ".fastq.gz",
+		fq2 = lambda wildcards: config[wildcards.sample]["fq_path"] + config[wildcards.sample]["fq2"] + ".fastq.gz"
+	output:
+		fq1_zip =  (config["rawQC"]+"{sample}_fq1_fastqc.zip"),
+		fq1_html = (config["rawQC"]+"{sample}_fq1_fastqc.html"),
+		fq2_zip =  (config["rawQC"]+"{sample}_fq2_fastqc.zip"),
+		fq2_html = (config["rawQC"]+"{sample}_fq2_fastqc.html")
+	params:
+		fastqc = fastqc_path,
+		fastqc_dir = (config["rawQC"]),
+		fq1_prefix = lambda wildcards: config[wildcards.sample]["fq_path"] + config[wildcards.sample]["fq1"],
+		fq2_prefix = lambda wildcards: config[wildcards.sample]["fq_path"] + config[wildcards.sample]["fq2"]
+	resources:
+	  mem_gb=64,
+	  walltime="01:30:00",
+	  threads=8
+	shell:
+		"""
+		{params.fastqc} {input.fq1};
+		{params.fastqc} {input.fq2};
+		mv {params.fq1_prefix}_fastqc.html {output.fq1_html};
+		mv {params.fq1_prefix}_fastqc.zip {output.fq1_zip};
+		mv {params.fq2_prefix}_fastqc.html {output.fq2_html};
+		mv {params.fq2_prefix}_fastqc.zip {output.fq2_zip}
+		"""
+
 #---------------------
 #rule trim fq:
 #---------------------

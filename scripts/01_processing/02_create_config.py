@@ -22,7 +22,7 @@ with open('sampleReadGroupInfo.txt', 'r') as infile:
 # create header and write to outfile
 header = '''{{
     "Commment_Input_Output_Directories": "This section specifies the input and output directories for scripts",
-    "rawReads" : "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+    "rawReads" : "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
     "rawQC" : "../../rawQC/",
     "trimmedReads" : "../../trimmedReads/",
     "trimmedQC" : "../../trimmedQC/",
@@ -79,7 +79,7 @@ with open('sampleReadGroupInfo.txt', 'r') as infile:
 
         out = '''
     "{0}":{{
-        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/",
+        "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "{1}",
         "fq2": "{2}",
         "fq_R1": "{3}",

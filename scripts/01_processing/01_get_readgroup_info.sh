@@ -2,7 +2,7 @@
 
 # change directory
 # This is where the raw fast files are. All of them are in the same folder 
-cd /tgen_labs/jfryer/projects/chemobrain/pilot/bulkRNA/
+cd /tgen_labs/jfryer/projects/chemobrain/1MPI/fastq/
 
 # create file with list of R1 samples. Data is paired end R1 and R2. 
 # We only need to collect the read information once per sample. The read information is in both the R1 and R2 fastq files. 
