@@ -17,6 +17,7 @@ library(data.table)
 library(philentropy)
 library(gplots)
 library(variancePartition)
+library(NatParksPalettes) # colors
 
 
 #BiocManager::install("variancePartition", lib="/tgen_labs/jfryer/YOURACCOUNTHERE/R/x86_64-pc-linux-gnu-library/4.3")
