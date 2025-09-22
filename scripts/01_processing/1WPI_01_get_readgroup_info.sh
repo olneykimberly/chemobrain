@@ -2,7 +2,7 @@
 
 # change directory
 # This is where the raw fast files are. All of them are in the same folder 
-cd /tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/
+cd /tgen_labs/jfryer/projects/chemobrain/1WPI/bulkRNA/
 
 # create file with list of R1 samples. Data is paired end R1 and R2. 
 # We only need to collect the read information once per sample. The read information is in both the R1 and R2 fastq files. 
@@ -15,10 +15,10 @@ for sample in `cat R1Samples.txt`; do
 done;
 
 # mv the files 
-mv R1Samples.txt  /tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/R1Samples.txt
-mv sampleReadInfo.txt //tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/sampleReadInfo.txt
+mv R1Samples.txt  /tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/R1Samples_1WPI.txt
+mv sampleReadInfo.txt //tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/sampleReadInfo_1WPI.txt
 
 cd /tgen_labs/jfryer/kolney/chemobrain/scripts/01_processing/
-paste -d "\t" R1Samples.txt sampleReadInfo.txt > sampleReadGroupInfo.txt # create sample info
-rm R1Samples.txt
-rm sampleReadInfo.txt
+paste -d "\t" R1Samples_1WPI.txt sampleReadInfo_1WPI.txt > sampleReadGroupInfo_1WPI.txt # create sample info
+rm R1Samples_1WPI.txt
+rm sampleReadInfo_1WPI.txt

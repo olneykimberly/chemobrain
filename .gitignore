@@ -4,3 +4,4 @@
 .Ruserdata
 scripts/01_processing/slurm.*
 scripts/01_processing/.snakemake*
+scripts/02_differential_expression/old/*

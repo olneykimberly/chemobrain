@@ -1,6 +1,9 @@
 import os
 
-configfile: "config.json"
+configfile: "config_1WPI.json"
+
+# 1MPI config.json
+# 1WPI config_1WPI.json
 
 #Tools
 fastqc_path = "fastqc"
