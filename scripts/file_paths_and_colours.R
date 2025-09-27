@@ -37,9 +37,13 @@ saveToPDF <- function(...) {
 }
 
 #----------------- Data
-metadata <- read.delim("/tgen_labs/jfryer/kolney/chemobrain/metadata_1MPI.tsv", header = TRUE, sep = "\t")
+metadata_1MPI <- read.delim("/tgen_labs/jfryer/kolney/chemobrain/metadata_1MPI.tsv", header = TRUE, sep = "\t")
+metadata_1WPI <- read.delim("/tgen_labs/jfryer/kolney/chemobrain/metadata_1WPI.tsv", header = TRUE, sep = "\t")
+metadata_1WPI <- metadata_1WPI %>%
+  mutate(Group = gsub("MTXL", "MTXLEUC", Group)) # Why all of a sudden is it MTXL?! convert back to MTXLEUC to be consistent. 
+
 # Update Sample_ID
-#metadata$Sample_ID <- sub("MTX_LEUC", "MTXLEUC", metadata$Sample_ID)
+# metadata$Sample_ID <- sub("MTX_LEUC", "MTXLEUC", metadata$Sample_ID)
 
 # Exclude samples 
 # metadata <- metadata[metadata$Study_Specimen_ID != "CBP_16_F_Saline",] #

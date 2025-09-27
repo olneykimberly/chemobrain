@@ -10,14 +10,13 @@ numSamples = 0
 with open('sampleReadGroupInfo_1WPI.txt', 'r') as infile:
     for line in infile:
         numSamples += 1
-
         line = line.replace(".", "_")
         line = line.replace("-", "_")
         split = line.split()
         sampleAttributes = split[0].split('_')  # CB_F10-SALINE-1WKPI_1_BR_Whole_C1_WGMRS_A42211_235MMYLT4_AGTGTTCGCC_L004_R1_001.fastq.gz
                                                 #  E1_BR.FCHVC2VDRXY_L1_R1_ITAAGTGGT-CTTAAGCC.fastq.gz pigID_tissue.sequencer_lane_read_X-X.fastq.gz
         # create a shorter sample name
-        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[2] # CB_F10_SALINE
+        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[2] + '_' + sampleAttributes[3]
         allSamples.append(stemName)
 
 # create header and write to outfile
@@ -42,7 +41,7 @@ outfile.write(header.format(allSamples))
 
 # config formatting
 counter = 0
-with open('sampleReadGroupInfo.txt', 'r') as infile:
+with open('sampleReadGroupInfo_1WPI.txt', 'r') as infile:
     for line in infile:
         counter += 1
         # store sample name and info from the fastq file
@@ -61,7 +60,7 @@ with open('sampleReadGroupInfo.txt', 'r') as infile:
         sampleAttributes = split[0].split('_')  # project_uniqueNum_1_tissue_group_XX_XX_sequencer_adapter_lane_read_001.fastq.gz
 
         # create a shorter sample name
-        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[2] # CB_F10_SALINE
+        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[2] + '_' + sampleAttributes[3]
         shortName1 = stemName + '_R1'
         shortName2 = stemName + '_R2'
 

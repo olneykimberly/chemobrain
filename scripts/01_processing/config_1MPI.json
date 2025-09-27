@@ -1,7 +1,7 @@
 {
     "Commment_Input_Output_Directories": "This section specifies the input and output directories for scripts",
     "rawReads" : "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
-    "rawQC" : "/tgen_labs/jfryer/kolney/chemobrain/rawQC/",
+    "rawQC" : "../../rawQC/",
     "trimmedReads" : "../../trimmedReads/",
     "trimmedQC" : "../../trimmedQC/",
     "starAligned" : "../../starAligned/",
@@ -13,863 +13,863 @@
     "star_ref_index" : "/tgen_labs/jfryer/projects/references/mouse/refdata-gex-GRCm39-2024-A_STARv2.7.11_150sjdb",
 
     "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
-    "sample_names": ['CB_F1_LEUC', 'CB_F1_MTX', 'CB_F1_MTXLEUC', 'CB_F1_MTXLEUC', 'CB_F1_MTXLEUC', 'CB_F1_SALINE', 'CB_F2_LEUC', 'CB_F2_MTX', 'CB_F2_MTXLEUC', 'CB_F2_SALINE', 'CB_F3_LEUC', 'CB_F3_MTX', 'CB_F3_MTXLEUC', 'CB_F3_SALINE', 'CB_F4_LEUC', 'CB_F4_LEUC', 'CB_F4_MTX', 'CB_F4_SALINE', 'CB_F5_LEUC', 'CB_F5_MTX', 'CB_F5_MTXLEUC', 'CB_F5_SALINE', 'CB_F6_LEUC', 'CB_F6_MTX', 'CB_F6_MTXLEUC', 'CB_F6_SALINE', 'CB_F7_MTXLEUC', 'CB_F7_SALINE', 'CB_F8_MTXLEUC', 'CB_F8_SALINE', 'CB_F9_LEUC', 'CB_F9_SALINE', 'CB_M1_LEUC', 'CB_M1_MTX', 'CB_M1_MTXLEUC', 'CB_M1_MTXLEUC', 'CB_M1_MTXLEUC', 'CB_M1_SALINE', 'CB_M1_SALINE', 'CB_M2_LEUC', 'CB_M2_MTX', 'CB_M2_MTXLEUC', 'CB_M2_SALINE', 'CB_M3_LEUC', 'CB_M3_MTX', 'CB_M3_MTXLEUC', 'CB_M3_SALINE', 'CB_M4_LEUC', 'CB_M4_MTX', 'CB_M4_MTXLEUC', 'CB_M4_SALINE', 'CB_M5_LEUC', 'CB_M5_MTX', 'CB_M5_MTXLEUC', 'CB_M5_SALINE', 'CB_M6_LEUC', 'CB_M6_MTX', 'CB_M6_MTXLEUC', 'CB_M6_SALINE', 'CB_M7_LEUC', 'CB_M7_MTX', 'CB_M7_SALINE', 'CB_M8_MTXLEUC', 'CB_M8_SALINE', 'CB_M9_MTXLEUC', 'CB_M9_SALINE'],
+    "sample_names": ['CB_F1_LEUC_1MPI', 'CB_F1_MTX_1MPI', 'CB_F1_MTXLEUC_1MPI', 'CB_F1_MTXLEUC_1MPI', 'CB_F1_MTXLEUC_1MPI', 'CB_F1_SALINE_1MPI', 'CB_F2_LEUC_1MPI', 'CB_F2_MTX_1MPI', 'CB_F2_MTXLEUC_1MPI', 'CB_F2_SALINE_1MPI', 'CB_F3_LEUC_1MPI', 'CB_F3_MTX_1MPI', 'CB_F3_MTXLEUC_1MPI', 'CB_F3_SALINE_1MPI', 'CB_F4_LEUC_1MPI', 'CB_F4_LEUC_1MPI', 'CB_F4_MTX_1MPI', 'CB_F4_SALINE_1MPI', 'CB_F5_LEUC_1MPI', 'CB_F5_MTX_1MPI', 'CB_F5_MTXLEUC_1MPI', 'CB_F5_SALINE_1MPI', 'CB_F6_LEUC_1MPI', 'CB_F6_MTX_1MPI', 'CB_F6_MTXLEUC_1MPI', 'CB_F6_SALINE_1MPI', 'CB_F7_MTXLEUC_1MPI', 'CB_F7_SALINE_1MPI', 'CB_F8_MTXLEUC_1MPI', 'CB_F8_SALINE_1MPI', 'CB_F9_LEUC_1MPI', 'CB_F9_SALINE_1MPI', 'CB_M1_LEUC_1MPI', 'CB_M1_MTX_1MPI', 'CB_M1_MTXLEUC_1MPI', 'CB_M1_MTXLEUC_1MPI', 'CB_M1_MTXLEUC_1MPI', 'CB_M1_SALINE_1MPI', 'CB_M1_SALINE_1MPI', 'CB_M2_LEUC_1MPI', 'CB_M2_MTX_1MPI', 'CB_M2_MTXLEUC_1MPI', 'CB_M2_SALINE_1MPI', 'CB_M3_LEUC_1MPI', 'CB_M3_MTX_1MPI', 'CB_M3_MTXLEUC_1MPI', 'CB_M3_SALINE_1MPI', 'CB_M4_LEUC_1MPI', 'CB_M4_MTX_1MPI', 'CB_M4_MTXLEUC_1MPI', 'CB_M4_SALINE_1MPI', 'CB_M5_LEUC_1MPI', 'CB_M5_MTX_1MPI', 'CB_M5_MTXLEUC_1MPI', 'CB_M5_SALINE_1MPI', 'CB_M6_LEUC_1MPI', 'CB_M6_MTX_1MPI', 'CB_M6_MTXLEUC_1MPI', 'CB_M6_SALINE_1MPI', 'CB_M7_LEUC_1MPI', 'CB_M7_MTX_1MPI', 'CB_M7_SALINE_1MPI', 'CB_M8_MTXLEUC_1MPI', 'CB_M8_SALINE_1MPI', 'CB_M9_MTXLEUC_1MPI', 'CB_M9_SALINE_1MPI'],
 
-    "CB_F1_LEUC":{
+    "CB_F1_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_LEUC_C6_WGMRS_A41009_232CW2LT4_GTCCAAGCTC_L005_R1_001",
         "fq2": "CB_F1_1_BR_LEUC_C6_WGMRS_A41009_232CW2LT4_GTCCAAGCTC_L005_R2_001",
-        "fq_R1": "CB_F1_LEUC_R1",
-        "fq_R2": "CB_F1_LEUC_R2",
-        "ID": "CB_F1_LEUC",
-        "SM": "CB_F1_LEUC",
+        "fq_R1": "CB_F1_LEUC_1MPI_R1",
+        "fq_R2": "CB_F1_LEUC_1MPI_R2",
+        "ID": "CB_F1_LEUC_1MPI",
+        "SM": "CB_F1_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_LEUC",
+        "LB": "CB_F1_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F1_MTX":{
+    "CB_F1_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_MTX_C1_WGMRS_A40802_232CW2LT4_TCCTGAAGTG_L005_R1_001",
         "fq2": "CB_F1_1_BR_MTX_C1_WGMRS_A40802_232CW2LT4_TCCTGAAGTG_L005_R2_001",
-        "fq_R1": "CB_F1_MTX_R1",
-        "fq_R2": "CB_F1_MTX_R2",
-        "ID": "CB_F1_MTX",
-        "SM": "CB_F1_MTX",
+        "fq_R1": "CB_F1_MTX_1MPI_R1",
+        "fq_R2": "CB_F1_MTX_1MPI_R2",
+        "ID": "CB_F1_MTX_1MPI",
+        "SM": "CB_F1_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_MTX",
+        "LB": "CB_F1_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F1_MTXLEUC":{
+    "CB_F1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_MTXLEUC_C2_WGMRS_A40823_232CW2LT4_AGACTGTCGG_L005_R1_001",
         "fq2": "CB_F1_1_BR_MTXLEUC_C2_WGMRS_A40823_232CW2LT4_AGACTGTCGG_L005_R2_001",
-        "fq_R1": "CB_F1_MTXLEUC_R1",
-        "fq_R2": "CB_F1_MTXLEUC_R2",
-        "ID": "CB_F1_MTXLEUC",
-        "SM": "CB_F1_MTXLEUC",
+        "fq_R1": "CB_F1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F1_MTXLEUC_1MPI_R2",
+        "ID": "CB_F1_MTXLEUC_1MPI",
+        "SM": "CB_F1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_MTXLEUC",
+        "LB": "CB_F1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F1_MTXLEUC":{
+    "CB_F1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_MTXLEUC_C3_WGMRS_A40825_232CW2LT4_GAGAATAAGG_L005_R1_001",
         "fq2": "CB_F1_1_BR_MTXLEUC_C3_WGMRS_A40825_232CW2LT4_GAGAATAAGG_L005_R2_001",
-        "fq_R1": "CB_F1_MTXLEUC_R1",
-        "fq_R2": "CB_F1_MTXLEUC_R2",
-        "ID": "CB_F1_MTXLEUC",
-        "SM": "CB_F1_MTXLEUC",
+        "fq_R1": "CB_F1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F1_MTXLEUC_1MPI_R2",
+        "ID": "CB_F1_MTXLEUC_1MPI",
+        "SM": "CB_F1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_MTXLEUC",
+        "LB": "CB_F1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F1_MTXLEUC":{
+    "CB_F1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_MTXLEUC_C5_WGMRS_A40996_232CW2LT4_ACCGGTCGAA_L005_R1_001",
         "fq2": "CB_F1_1_BR_MTXLEUC_C5_WGMRS_A40996_232CW2LT4_ACCGGTCGAA_L005_R2_001",
-        "fq_R1": "CB_F1_MTXLEUC_R1",
-        "fq_R2": "CB_F1_MTXLEUC_R2",
-        "ID": "CB_F1_MTXLEUC",
-        "SM": "CB_F1_MTXLEUC",
+        "fq_R1": "CB_F1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F1_MTXLEUC_1MPI_R2",
+        "ID": "CB_F1_MTXLEUC_1MPI",
+        "SM": "CB_F1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_MTXLEUC",
+        "LB": "CB_F1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F1_SALINE":{
+    "CB_F1_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F1_1_BR_SALINE_C4_WGMRS_A40826_232CW2LT4_TGTTGTCGCC_L005_R1_001",
         "fq2": "CB_F1_1_BR_SALINE_C4_WGMRS_A40826_232CW2LT4_TGTTGTCGCC_L005_R2_001",
-        "fq_R1": "CB_F1_SALINE_R1",
-        "fq_R2": "CB_F1_SALINE_R2",
-        "ID": "CB_F1_SALINE",
-        "SM": "CB_F1_SALINE",
+        "fq_R1": "CB_F1_SALINE_1MPI_R1",
+        "fq_R2": "CB_F1_SALINE_1MPI_R2",
+        "ID": "CB_F1_SALINE_1MPI",
+        "SM": "CB_F1_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F1_SALINE",
+        "LB": "CB_F1_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F2_LEUC":{
+    "CB_F2_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F2_1_BR_LEUC_C2_WGMRS_A40834_232CW2LT4_AATGCGTCGG_L005_R1_001",
         "fq2": "CB_F2_1_BR_LEUC_C2_WGMRS_A40834_232CW2LT4_AATGCGTCGG_L005_R2_001",
-        "fq_R1": "CB_F2_LEUC_R1",
-        "fq_R2": "CB_F2_LEUC_R2",
-        "ID": "CB_F2_LEUC",
-        "SM": "CB_F2_LEUC",
+        "fq_R1": "CB_F2_LEUC_1MPI_R1",
+        "fq_R2": "CB_F2_LEUC_1MPI_R2",
+        "ID": "CB_F2_LEUC_1MPI",
+        "SM": "CB_F2_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F2_LEUC",
+        "LB": "CB_F2_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F2_MTX":{
+    "CB_F2_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F2_1_BR_MTX_C4_WGMRS_A41012_232CW2LT4_CTTGGTAGCA_L005_R1_001",
         "fq2": "CB_F2_1_BR_MTX_C4_WGMRS_A41012_232CW2LT4_CTTGGTAGCA_L005_R2_001",
-        "fq_R1": "CB_F2_MTX_R1",
-        "fq_R2": "CB_F2_MTX_R2",
-        "ID": "CB_F2_MTX",
-        "SM": "CB_F2_MTX",
+        "fq_R1": "CB_F2_MTX_1MPI_R1",
+        "fq_R2": "CB_F2_MTX_1MPI_R2",
+        "ID": "CB_F2_MTX_1MPI",
+        "SM": "CB_F2_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F2_MTX",
+        "LB": "CB_F2_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F2_MTXLEUC":{
+    "CB_F2_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F2_1_BR_MTXLEUC_C1_WGMRS_A40807_232CW2LT4_GTCCACGTTG_L005_R1_001",
         "fq2": "CB_F2_1_BR_MTXLEUC_C1_WGMRS_A40807_232CW2LT4_GTCCACGTTG_L005_R2_001",
-        "fq_R1": "CB_F2_MTXLEUC_R1",
-        "fq_R2": "CB_F2_MTXLEUC_R2",
-        "ID": "CB_F2_MTXLEUC",
-        "SM": "CB_F2_MTXLEUC",
+        "fq_R1": "CB_F2_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F2_MTXLEUC_1MPI_R2",
+        "ID": "CB_F2_MTXLEUC_1MPI",
+        "SM": "CB_F2_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F2_MTXLEUC",
+        "LB": "CB_F2_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F2_SALINE":{
+    "CB_F2_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F2_1_BR_SALINE_C3_WGMRS_A40997_232CW2LT4_GCACGTTCTA_L005_R1_001",
         "fq2": "CB_F2_1_BR_SALINE_C3_WGMRS_A40997_232CW2LT4_GCACGTTCTA_L005_R2_001",
-        "fq_R1": "CB_F2_SALINE_R1",
-        "fq_R2": "CB_F2_SALINE_R2",
-        "ID": "CB_F2_SALINE",
-        "SM": "CB_F2_SALINE",
+        "fq_R1": "CB_F2_SALINE_1MPI_R1",
+        "fq_R2": "CB_F2_SALINE_1MPI_R2",
+        "ID": "CB_F2_SALINE_1MPI",
+        "SM": "CB_F2_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F2_SALINE",
+        "LB": "CB_F2_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F3_LEUC":{
+    "CB_F3_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F3_1_BR_LEUC_C1_WGMRS_A40820_232CW2LT4_AGTCAATTGG_L005_R1_001",
         "fq2": "CB_F3_1_BR_LEUC_C1_WGMRS_A40820_232CW2LT4_AGTCAATTGG_L005_R2_001",
-        "fq_R1": "CB_F3_LEUC_R1",
-        "fq_R2": "CB_F3_LEUC_R2",
-        "ID": "CB_F3_LEUC",
-        "SM": "CB_F3_LEUC",
+        "fq_R1": "CB_F3_LEUC_1MPI_R1",
+        "fq_R2": "CB_F3_LEUC_1MPI_R2",
+        "ID": "CB_F3_LEUC_1MPI",
+        "SM": "CB_F3_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F3_LEUC",
+        "LB": "CB_F3_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F3_MTX":{
+    "CB_F3_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F3_1_BR_MTX_C3_WGMRS_A41001_232CW2LT4_TTCACGAGCG_L005_R1_001",
         "fq2": "CB_F3_1_BR_MTX_C3_WGMRS_A41001_232CW2LT4_TTCACGAGCG_L005_R2_001",
-        "fq_R1": "CB_F3_MTX_R1",
-        "fq_R2": "CB_F3_MTX_R2",
-        "ID": "CB_F3_MTX",
-        "SM": "CB_F3_MTX",
+        "fq_R1": "CB_F3_MTX_1MPI_R1",
+        "fq_R2": "CB_F3_MTX_1MPI_R2",
+        "ID": "CB_F3_MTX_1MPI",
+        "SM": "CB_F3_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F3_MTX",
+        "LB": "CB_F3_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F3_MTXLEUC":{
+    "CB_F3_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F3_1_BR_MTXLEUC_C2_WGMRS_A40821_232CW2LT4_CGCATCACCT_L005_R1_001",
         "fq2": "CB_F3_1_BR_MTXLEUC_C2_WGMRS_A40821_232CW2LT4_CGCATCACCT_L005_R2_001",
-        "fq_R1": "CB_F3_MTXLEUC_R1",
-        "fq_R2": "CB_F3_MTXLEUC_R2",
-        "ID": "CB_F3_MTXLEUC",
-        "SM": "CB_F3_MTXLEUC",
+        "fq_R1": "CB_F3_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F3_MTXLEUC_1MPI_R2",
+        "ID": "CB_F3_MTXLEUC_1MPI",
+        "SM": "CB_F3_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F3_MTXLEUC",
+        "LB": "CB_F3_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F3_SALINE":{
+    "CB_F3_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F3_1_BR_SALINE_C4_WGMRS_A41015_232CW2LT4_TGATACATCC_L005_R1_001",
         "fq2": "CB_F3_1_BR_SALINE_C4_WGMRS_A41015_232CW2LT4_TGATACATCC_L005_R2_001",
-        "fq_R1": "CB_F3_SALINE_R1",
-        "fq_R2": "CB_F3_SALINE_R2",
-        "ID": "CB_F3_SALINE",
-        "SM": "CB_F3_SALINE",
+        "fq_R1": "CB_F3_SALINE_1MPI_R1",
+        "fq_R2": "CB_F3_SALINE_1MPI_R2",
+        "ID": "CB_F3_SALINE_1MPI",
+        "SM": "CB_F3_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F3_SALINE",
+        "LB": "CB_F3_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F4_LEUC":{
+    "CB_F4_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F4_1_BR_LEUC_C2_WGMRS_A40817_232CW2LT4_TCTGGTACAA_L005_R1_001",
         "fq2": "CB_F4_1_BR_LEUC_C2_WGMRS_A40817_232CW2LT4_TCTGGTACAA_L005_R2_001",
-        "fq_R1": "CB_F4_LEUC_R1",
-        "fq_R2": "CB_F4_LEUC_R2",
-        "ID": "CB_F4_LEUC",
-        "SM": "CB_F4_LEUC",
+        "fq_R1": "CB_F4_LEUC_1MPI_R1",
+        "fq_R2": "CB_F4_LEUC_1MPI_R2",
+        "ID": "CB_F4_LEUC_1MPI",
+        "SM": "CB_F4_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F4_LEUC",
+        "LB": "CB_F4_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F4_LEUC":{
+    "CB_F4_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F4_1_BR_LEUC_C4_WGMRS_A40998_232CW2LT4_AAGGAAGGAA_L005_R1_001",
         "fq2": "CB_F4_1_BR_LEUC_C4_WGMRS_A40998_232CW2LT4_AAGGAAGGAA_L005_R2_001",
-        "fq_R1": "CB_F4_LEUC_R1",
-        "fq_R2": "CB_F4_LEUC_R2",
-        "ID": "CB_F4_LEUC",
-        "SM": "CB_F4_LEUC",
+        "fq_R1": "CB_F4_LEUC_1MPI_R1",
+        "fq_R2": "CB_F4_LEUC_1MPI_R2",
+        "ID": "CB_F4_LEUC_1MPI",
+        "SM": "CB_F4_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F4_LEUC",
+        "LB": "CB_F4_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F4_MTX":{
+    "CB_F4_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F4_1_BR_MTX_C1_WGMRS_A40806_232CW2LT4_GGCTCTACTG_L005_R1_001",
         "fq2": "CB_F4_1_BR_MTX_C1_WGMRS_A40806_232CW2LT4_GGCTCTACTG_L005_R2_001",
-        "fq_R1": "CB_F4_MTX_R1",
-        "fq_R2": "CB_F4_MTX_R2",
-        "ID": "CB_F4_MTX",
-        "SM": "CB_F4_MTX",
+        "fq_R1": "CB_F4_MTX_1MPI_R1",
+        "fq_R2": "CB_F4_MTX_1MPI_R2",
+        "ID": "CB_F4_MTX_1MPI",
+        "SM": "CB_F4_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F4_MTX",
+        "LB": "CB_F4_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F4_SALINE":{
+    "CB_F4_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F4_1_BR_SALINE_C3_WGMRS_A40824_232CW2LT4_ATCTGGACTC_L005_R1_001",
         "fq2": "CB_F4_1_BR_SALINE_C3_WGMRS_A40824_232CW2LT4_ATCTGGACTC_L005_R2_001",
-        "fq_R1": "CB_F4_SALINE_R1",
-        "fq_R2": "CB_F4_SALINE_R2",
-        "ID": "CB_F4_SALINE",
-        "SM": "CB_F4_SALINE",
+        "fq_R1": "CB_F4_SALINE_1MPI_R1",
+        "fq_R2": "CB_F4_SALINE_1MPI_R2",
+        "ID": "CB_F4_SALINE_1MPI",
+        "SM": "CB_F4_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F4_SALINE",
+        "LB": "CB_F4_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F5_LEUC":{
+    "CB_F5_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F5_1_BR_LEUC_C3_WGMRS_A41013_232CW2LT4_AACGAGGCGT_L005_R1_001",
         "fq2": "CB_F5_1_BR_LEUC_C3_WGMRS_A41013_232CW2LT4_AACGAGGCGT_L005_R2_001",
-        "fq_R1": "CB_F5_LEUC_R1",
-        "fq_R2": "CB_F5_LEUC_R2",
-        "ID": "CB_F5_LEUC",
-        "SM": "CB_F5_LEUC",
+        "fq_R1": "CB_F5_LEUC_1MPI_R1",
+        "fq_R2": "CB_F5_LEUC_1MPI_R2",
+        "ID": "CB_F5_LEUC_1MPI",
+        "SM": "CB_F5_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F5_LEUC",
+        "LB": "CB_F5_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F5_MTX":{
+    "CB_F5_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F5_1_BR_MTX_C2_WGMRS_A40995_232CW2LT4_CTGCTAGCTG_L005_R1_001",
         "fq2": "CB_F5_1_BR_MTX_C2_WGMRS_A40995_232CW2LT4_CTGCTAGCTG_L005_R2_001",
-        "fq_R1": "CB_F5_MTX_R1",
-        "fq_R2": "CB_F5_MTX_R2",
-        "ID": "CB_F5_MTX",
-        "SM": "CB_F5_MTX",
+        "fq_R1": "CB_F5_MTX_1MPI_R1",
+        "fq_R2": "CB_F5_MTX_1MPI_R2",
+        "ID": "CB_F5_MTX_1MPI",
+        "SM": "CB_F5_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F5_MTX",
+        "LB": "CB_F5_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F5_MTXLEUC":{
+    "CB_F5_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F5_1_BR_MTXLEUC_C1_WGMRS_A40827_232CW2LT4_CTGCGGTGTT_L005_R1_001",
         "fq2": "CB_F5_1_BR_MTXLEUC_C1_WGMRS_A40827_232CW2LT4_CTGCGGTGTT_L005_R2_001",
-        "fq_R1": "CB_F5_MTXLEUC_R1",
-        "fq_R2": "CB_F5_MTXLEUC_R2",
-        "ID": "CB_F5_MTXLEUC",
-        "SM": "CB_F5_MTXLEUC",
+        "fq_R1": "CB_F5_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F5_MTXLEUC_1MPI_R2",
+        "ID": "CB_F5_MTXLEUC_1MPI",
+        "SM": "CB_F5_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F5_MTXLEUC",
+        "LB": "CB_F5_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F5_SALINE":{
+    "CB_F5_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F5_1_BR_SALINE_C4_WGMRS_A41019_232CW2LT4_ATCAGCCTCC_L005_R1_001",
         "fq2": "CB_F5_1_BR_SALINE_C4_WGMRS_A41019_232CW2LT4_ATCAGCCTCC_L005_R2_001",
-        "fq_R1": "CB_F5_SALINE_R1",
-        "fq_R2": "CB_F5_SALINE_R2",
-        "ID": "CB_F5_SALINE",
-        "SM": "CB_F5_SALINE",
+        "fq_R1": "CB_F5_SALINE_1MPI_R1",
+        "fq_R2": "CB_F5_SALINE_1MPI_R2",
+        "ID": "CB_F5_SALINE_1MPI",
+        "SM": "CB_F5_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F5_SALINE",
+        "LB": "CB_F5_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F6_LEUC":{
+    "CB_F6_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F6_1_BR_LEUC_C3_WGMRS_A40994_232CW2LT4_CACAAGATCC_L005_R1_001",
         "fq2": "CB_F6_1_BR_LEUC_C3_WGMRS_A40994_232CW2LT4_CACAAGATCC_L005_R2_001",
-        "fq_R1": "CB_F6_LEUC_R1",
-        "fq_R2": "CB_F6_LEUC_R2",
-        "ID": "CB_F6_LEUC",
-        "SM": "CB_F6_LEUC",
+        "fq_R1": "CB_F6_LEUC_1MPI_R1",
+        "fq_R2": "CB_F6_LEUC_1MPI_R2",
+        "ID": "CB_F6_LEUC_1MPI",
+        "SM": "CB_F6_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F6_LEUC",
+        "LB": "CB_F6_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F6_MTX":{
+    "CB_F6_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F6_1_BR_MTX_C4_WGMRS_A41007_232CW2LT4_AACCTGACGG_L005_R1_001",
         "fq2": "CB_F6_1_BR_MTX_C4_WGMRS_A41007_232CW2LT4_AACCTGACGG_L005_R2_001",
-        "fq_R1": "CB_F6_MTX_R1",
-        "fq_R2": "CB_F6_MTX_R2",
-        "ID": "CB_F6_MTX",
-        "SM": "CB_F6_MTX",
+        "fq_R1": "CB_F6_MTX_1MPI_R1",
+        "fq_R2": "CB_F6_MTX_1MPI_R2",
+        "ID": "CB_F6_MTX_1MPI",
+        "SM": "CB_F6_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F6_MTX",
+        "LB": "CB_F6_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F6_MTXLEUC":{
+    "CB_F6_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F6_1_BR_MTXLEUC_C2_WGMRS_A40819_232CW2LT4_GAATGGAGAA_L005_R1_001",
         "fq2": "CB_F6_1_BR_MTXLEUC_C2_WGMRS_A40819_232CW2LT4_GAATGGAGAA_L005_R2_001",
-        "fq_R1": "CB_F6_MTXLEUC_R1",
-        "fq_R2": "CB_F6_MTXLEUC_R2",
-        "ID": "CB_F6_MTXLEUC",
-        "SM": "CB_F6_MTXLEUC",
+        "fq_R1": "CB_F6_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F6_MTXLEUC_1MPI_R2",
+        "ID": "CB_F6_MTXLEUC_1MPI",
+        "SM": "CB_F6_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F6_MTXLEUC",
+        "LB": "CB_F6_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F6_SALINE":{
+    "CB_F6_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F6_1_BR_SALINE_C1_WGMRS_A40803_232CW2LT4_AATCCTTACC_L005_R1_001",
         "fq2": "CB_F6_1_BR_SALINE_C1_WGMRS_A40803_232CW2LT4_AATCCTTACC_L005_R2_001",
-        "fq_R1": "CB_F6_SALINE_R1",
-        "fq_R2": "CB_F6_SALINE_R2",
-        "ID": "CB_F6_SALINE",
-        "SM": "CB_F6_SALINE",
+        "fq_R1": "CB_F6_SALINE_1MPI_R1",
+        "fq_R2": "CB_F6_SALINE_1MPI_R2",
+        "ID": "CB_F6_SALINE_1MPI",
+        "SM": "CB_F6_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F6_SALINE",
+        "LB": "CB_F6_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F7_MTXLEUC":{
+    "CB_F7_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F7_1_BR_MTXLEUC_C1_WGMRS_A40812_232CW2LT4_CTTGTCGTCG_L005_R1_001",
         "fq2": "CB_F7_1_BR_MTXLEUC_C1_WGMRS_A40812_232CW2LT4_CTTGTCGTCG_L005_R2_001",
-        "fq_R1": "CB_F7_MTXLEUC_R1",
-        "fq_R2": "CB_F7_MTXLEUC_R2",
-        "ID": "CB_F7_MTXLEUC",
-        "SM": "CB_F7_MTXLEUC",
+        "fq_R1": "CB_F7_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F7_MTXLEUC_1MPI_R2",
+        "ID": "CB_F7_MTXLEUC_1MPI",
+        "SM": "CB_F7_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F7_MTXLEUC",
+        "LB": "CB_F7_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F7_SALINE":{
+    "CB_F7_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F7_1_BR_SALINE_C2_WGMRS_A40828_232CW2LT4_GATAACTCCG_L005_R1_001",
         "fq2": "CB_F7_1_BR_SALINE_C2_WGMRS_A40828_232CW2LT4_GATAACTCCG_L005_R2_001",
-        "fq_R1": "CB_F7_SALINE_R1",
-        "fq_R2": "CB_F7_SALINE_R2",
-        "ID": "CB_F7_SALINE",
-        "SM": "CB_F7_SALINE",
+        "fq_R1": "CB_F7_SALINE_1MPI_R1",
+        "fq_R2": "CB_F7_SALINE_1MPI_R2",
+        "ID": "CB_F7_SALINE_1MPI",
+        "SM": "CB_F7_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F7_SALINE",
+        "LB": "CB_F7_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F8_MTXLEUC":{
+    "CB_F8_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F8_1_BR_MTXLEUC_C2_WGMRS_A40832_232CW2LT4_TGTGAAGGCC_L005_R1_001",
         "fq2": "CB_F8_1_BR_MTXLEUC_C2_WGMRS_A40832_232CW2LT4_TGTGAAGGCC_L005_R2_001",
-        "fq_R1": "CB_F8_MTXLEUC_R1",
-        "fq_R2": "CB_F8_MTXLEUC_R2",
-        "ID": "CB_F8_MTXLEUC",
-        "SM": "CB_F8_MTXLEUC",
+        "fq_R1": "CB_F8_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_F8_MTXLEUC_1MPI_R2",
+        "ID": "CB_F8_MTXLEUC_1MPI",
+        "SM": "CB_F8_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F8_MTXLEUC",
+        "LB": "CB_F8_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F8_SALINE":{
+    "CB_F8_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F8_1_BR_SALINE_C1_WGMRS_A40822_232CW2LT4_TATTGACACC_L005_R1_001",
         "fq2": "CB_F8_1_BR_SALINE_C1_WGMRS_A40822_232CW2LT4_TATTGACACC_L005_R2_001",
-        "fq_R1": "CB_F8_SALINE_R1",
-        "fq_R2": "CB_F8_SALINE_R2",
-        "ID": "CB_F8_SALINE",
-        "SM": "CB_F8_SALINE",
+        "fq_R1": "CB_F8_SALINE_1MPI_R1",
+        "fq_R2": "CB_F8_SALINE_1MPI_R2",
+        "ID": "CB_F8_SALINE_1MPI",
+        "SM": "CB_F8_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F8_SALINE",
+        "LB": "CB_F8_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F9_LEUC":{
+    "CB_F9_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F9_1_BR_LEUC_C1_WGMRS_A40801_232CW2LT4_CGAGGCCTAT_L005_R1_001",
         "fq2": "CB_F9_1_BR_LEUC_C1_WGMRS_A40801_232CW2LT4_CGAGGCCTAT_L005_R2_001",
-        "fq_R1": "CB_F9_LEUC_R1",
-        "fq_R2": "CB_F9_LEUC_R2",
-        "ID": "CB_F9_LEUC",
-        "SM": "CB_F9_LEUC",
+        "fq_R1": "CB_F9_LEUC_1MPI_R1",
+        "fq_R2": "CB_F9_LEUC_1MPI_R2",
+        "ID": "CB_F9_LEUC_1MPI",
+        "SM": "CB_F9_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F9_LEUC",
+        "LB": "CB_F9_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_F9_SALINE":{
+    "CB_F9_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_F9_1_BR_SALINE_C2_WGMRS_A41018_232CW2LT4_CTTAGCGCTG_L005_R1_001",
         "fq2": "CB_F9_1_BR_SALINE_C2_WGMRS_A41018_232CW2LT4_CTTAGCGCTG_L005_R2_001",
-        "fq_R1": "CB_F9_SALINE_R1",
-        "fq_R2": "CB_F9_SALINE_R2",
-        "ID": "CB_F9_SALINE",
-        "SM": "CB_F9_SALINE",
+        "fq_R1": "CB_F9_SALINE_1MPI_R1",
+        "fq_R2": "CB_F9_SALINE_1MPI_R2",
+        "ID": "CB_F9_SALINE_1MPI",
+        "SM": "CB_F9_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_F9_SALINE",
+        "LB": "CB_F9_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_LEUC":{
+    "CB_M1_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_LEUC_C4_WGMRS_A40816_232CW2LT4_GGCTTAAGAA_L005_R1_001",
         "fq2": "CB_M1_1_BR_LEUC_C4_WGMRS_A40816_232CW2LT4_GGCTTAAGAA_L005_R2_001",
-        "fq_R1": "CB_M1_LEUC_R1",
-        "fq_R2": "CB_M1_LEUC_R2",
-        "ID": "CB_M1_LEUC",
-        "SM": "CB_M1_LEUC",
+        "fq_R1": "CB_M1_LEUC_1MPI_R1",
+        "fq_R2": "CB_M1_LEUC_1MPI_R2",
+        "ID": "CB_M1_LEUC_1MPI",
+        "SM": "CB_M1_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_LEUC",
+        "LB": "CB_M1_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_MTX":{
+    "CB_M1_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_MTX_C7_WGMRS_A41011_232CW2LT4_TCCAAGGTAA_L005_R1_001",
         "fq2": "CB_M1_1_BR_MTX_C7_WGMRS_A41011_232CW2LT4_TCCAAGGTAA_L005_R2_001",
-        "fq_R1": "CB_M1_MTX_R1",
-        "fq_R2": "CB_M1_MTX_R2",
-        "ID": "CB_M1_MTX",
-        "SM": "CB_M1_MTX",
+        "fq_R1": "CB_M1_MTX_1MPI_R1",
+        "fq_R2": "CB_M1_MTX_1MPI_R2",
+        "ID": "CB_M1_MTX_1MPI",
+        "SM": "CB_M1_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_MTX",
+        "LB": "CB_M1_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_MTXLEUC":{
+    "CB_M1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_MTXLEUC_C2_WGMRS_A40808_232CW2LT4_CTCCGCAGTT_L005_R1_001",
         "fq2": "CB_M1_1_BR_MTXLEUC_C2_WGMRS_A40808_232CW2LT4_CTCCGCAGTT_L005_R2_001",
-        "fq_R1": "CB_M1_MTXLEUC_R1",
-        "fq_R2": "CB_M1_MTXLEUC_R2",
-        "ID": "CB_M1_MTXLEUC",
-        "SM": "CB_M1_MTXLEUC",
+        "fq_R1": "CB_M1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M1_MTXLEUC_1MPI_R2",
+        "ID": "CB_M1_MTXLEUC_1MPI",
+        "SM": "CB_M1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_MTXLEUC",
+        "LB": "CB_M1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_MTXLEUC":{
+    "CB_M1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_MTXLEUC_C3_WGMRS_A40813_232CW2LT4_TCGTCTTACA_L005_R1_001",
         "fq2": "CB_M1_1_BR_MTXLEUC_C3_WGMRS_A40813_232CW2LT4_TCGTCTTACA_L005_R2_001",
-        "fq_R1": "CB_M1_MTXLEUC_R1",
-        "fq_R2": "CB_M1_MTXLEUC_R2",
-        "ID": "CB_M1_MTXLEUC",
-        "SM": "CB_M1_MTXLEUC",
+        "fq_R1": "CB_M1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M1_MTXLEUC_1MPI_R2",
+        "ID": "CB_M1_MTXLEUC_1MPI",
+        "SM": "CB_M1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_MTXLEUC",
+        "LB": "CB_M1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_MTXLEUC":{
+    "CB_M1_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_MTXLEUC_C6_WGMRS_A41010_232CW2LT4_CTAGACTTCG_L005_R1_001",
         "fq2": "CB_M1_1_BR_MTXLEUC_C6_WGMRS_A41010_232CW2LT4_CTAGACTTCG_L005_R2_001",
-        "fq_R1": "CB_M1_MTXLEUC_R1",
-        "fq_R2": "CB_M1_MTXLEUC_R2",
-        "ID": "CB_M1_MTXLEUC",
-        "SM": "CB_M1_MTXLEUC",
+        "fq_R1": "CB_M1_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M1_MTXLEUC_1MPI_R2",
+        "ID": "CB_M1_MTXLEUC_1MPI",
+        "SM": "CB_M1_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_MTXLEUC",
+        "LB": "CB_M1_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_SALINE":{
+    "CB_M1_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_SALINE_C1_WGMRS_A40805_232CW2LT4_AATCTAGGCC_L005_R1_001",
         "fq2": "CB_M1_1_BR_SALINE_C1_WGMRS_A40805_232CW2LT4_AATCTAGGCC_L005_R2_001",
-        "fq_R1": "CB_M1_SALINE_R1",
-        "fq_R2": "CB_M1_SALINE_R2",
-        "ID": "CB_M1_SALINE",
-        "SM": "CB_M1_SALINE",
+        "fq_R1": "CB_M1_SALINE_1MPI_R1",
+        "fq_R2": "CB_M1_SALINE_1MPI_R2",
+        "ID": "CB_M1_SALINE_1MPI",
+        "SM": "CB_M1_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_SALINE",
+        "LB": "CB_M1_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M1_SALINE":{
+    "CB_M1_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M1_1_BR_SALINE_C5_WGMRS_A41008_232CW2LT4_AAGCTCGTGG_L005_R1_001",
         "fq2": "CB_M1_1_BR_SALINE_C5_WGMRS_A41008_232CW2LT4_AAGCTCGTGG_L005_R2_001",
-        "fq_R1": "CB_M1_SALINE_R1",
-        "fq_R2": "CB_M1_SALINE_R2",
-        "ID": "CB_M1_SALINE",
-        "SM": "CB_M1_SALINE",
+        "fq_R1": "CB_M1_SALINE_1MPI_R1",
+        "fq_R2": "CB_M1_SALINE_1MPI_R2",
+        "ID": "CB_M1_SALINE_1MPI",
+        "SM": "CB_M1_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M1_SALINE",
+        "LB": "CB_M1_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M2_LEUC":{
+    "CB_M2_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M2_1_BR_LEUC_C1_WGMRS_A40814_232CW2LT4_GAGAGGAGGA_L005_R1_001",
         "fq2": "CB_M2_1_BR_LEUC_C1_WGMRS_A40814_232CW2LT4_GAGAGGAGGA_L005_R2_001",
-        "fq_R1": "CB_M2_LEUC_R1",
-        "fq_R2": "CB_M2_LEUC_R2",
-        "ID": "CB_M2_LEUC",
-        "SM": "CB_M2_LEUC",
+        "fq_R1": "CB_M2_LEUC_1MPI_R1",
+        "fq_R2": "CB_M2_LEUC_1MPI_R2",
+        "ID": "CB_M2_LEUC_1MPI",
+        "SM": "CB_M2_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M2_LEUC",
+        "LB": "CB_M2_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M2_MTX":{
+    "CB_M2_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M2_1_BR_MTX_C3_WGMRS_A40837_232CW2LT4_CTCACCAGAA_L005_R1_001",
         "fq2": "CB_M2_1_BR_MTX_C3_WGMRS_A40837_232CW2LT4_CTCACCAGAA_L005_R2_001",
-        "fq_R1": "CB_M2_MTX_R1",
-        "fq_R2": "CB_M2_MTX_R2",
-        "ID": "CB_M2_MTX",
-        "SM": "CB_M2_MTX",
+        "fq_R1": "CB_M2_MTX_1MPI_R1",
+        "fq_R2": "CB_M2_MTX_1MPI_R2",
+        "ID": "CB_M2_MTX_1MPI",
+        "SM": "CB_M2_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M2_MTX",
+        "LB": "CB_M2_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M2_MTXLEUC":{
+    "CB_M2_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M2_1_BR_MTXLEUC_C4_WGMRS_A40838_232CW2LT4_TCTCGTACTT_L005_R1_001",
         "fq2": "CB_M2_1_BR_MTXLEUC_C4_WGMRS_A40838_232CW2LT4_TCTCGTACTT_L005_R2_001",
-        "fq_R1": "CB_M2_MTXLEUC_R1",
-        "fq_R2": "CB_M2_MTXLEUC_R2",
-        "ID": "CB_M2_MTXLEUC",
-        "SM": "CB_M2_MTXLEUC",
+        "fq_R1": "CB_M2_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M2_MTXLEUC_1MPI_R2",
+        "ID": "CB_M2_MTXLEUC_1MPI",
+        "SM": "CB_M2_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M2_MTXLEUC",
+        "LB": "CB_M2_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M2_SALINE":{
+    "CB_M2_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M2_1_BR_SALINE_C2_WGMRS_A40815_232CW2LT4_GTTAGATACC_L005_R1_001",
         "fq2": "CB_M2_1_BR_SALINE_C2_WGMRS_A40815_232CW2LT4_GTTAGATACC_L005_R2_001",
-        "fq_R1": "CB_M2_SALINE_R1",
-        "fq_R2": "CB_M2_SALINE_R2",
-        "ID": "CB_M2_SALINE",
-        "SM": "CB_M2_SALINE",
+        "fq_R1": "CB_M2_SALINE_1MPI_R1",
+        "fq_R2": "CB_M2_SALINE_1MPI_R2",
+        "ID": "CB_M2_SALINE_1MPI",
+        "SM": "CB_M2_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M2_SALINE",
+        "LB": "CB_M2_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M3_LEUC":{
+    "CB_M3_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M3_1_BR_LEUC_C3_WGMRS_A40831_232CW2LT4_CCACCAATTG_L005_R1_001",
         "fq2": "CB_M3_1_BR_LEUC_C3_WGMRS_A40831_232CW2LT4_CCACCAATTG_L005_R2_001",
-        "fq_R1": "CB_M3_LEUC_R1",
-        "fq_R2": "CB_M3_LEUC_R2",
-        "ID": "CB_M3_LEUC",
-        "SM": "CB_M3_LEUC",
+        "fq_R1": "CB_M3_LEUC_1MPI_R1",
+        "fq_R2": "CB_M3_LEUC_1MPI_R2",
+        "ID": "CB_M3_LEUC_1MPI",
+        "SM": "CB_M3_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M3_LEUC",
+        "LB": "CB_M3_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M3_MTX":{
+    "CB_M3_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M3_1_BR_MTX_C4_WGMRS_A41000_232CW2LT4_GGTTCCTATT_L005_R1_001",
         "fq2": "CB_M3_1_BR_MTX_C4_WGMRS_A41000_232CW2LT4_GGTTCCTATT_L005_R2_001",
-        "fq_R1": "CB_M3_MTX_R1",
-        "fq_R2": "CB_M3_MTX_R2",
-        "ID": "CB_M3_MTX",
-        "SM": "CB_M3_MTX",
+        "fq_R1": "CB_M3_MTX_1MPI_R1",
+        "fq_R2": "CB_M3_MTX_1MPI_R2",
+        "ID": "CB_M3_MTX_1MPI",
+        "SM": "CB_M3_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M3_MTX",
+        "LB": "CB_M3_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M3_MTXLEUC":{
+    "CB_M3_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M3_1_BR_MTXLEUC_C1_WGMRS_A40818_232CW2LT4_GTGAATTCGG_L005_R1_001",
         "fq2": "CB_M3_1_BR_MTXLEUC_C1_WGMRS_A40818_232CW2LT4_GTGAATTCGG_L005_R2_001",
-        "fq_R1": "CB_M3_MTXLEUC_R1",
-        "fq_R2": "CB_M3_MTXLEUC_R2",
-        "ID": "CB_M3_MTXLEUC",
-        "SM": "CB_M3_MTXLEUC",
+        "fq_R1": "CB_M3_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M3_MTXLEUC_1MPI_R2",
+        "ID": "CB_M3_MTXLEUC_1MPI",
+        "SM": "CB_M3_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M3_MTXLEUC",
+        "LB": "CB_M3_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M3_SALINE":{
+    "CB_M3_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M3_1_BR_SALINE_C2_WGMRS_A40830_232CW2LT4_TACGCGTATA_L005_R1_001",
         "fq2": "CB_M3_1_BR_SALINE_C2_WGMRS_A40830_232CW2LT4_TACGCGTATA_L005_R2_001",
-        "fq_R1": "CB_M3_SALINE_R1",
-        "fq_R2": "CB_M3_SALINE_R2",
-        "ID": "CB_M3_SALINE",
-        "SM": "CB_M3_SALINE",
+        "fq_R1": "CB_M3_SALINE_1MPI_R1",
+        "fq_R2": "CB_M3_SALINE_1MPI_R2",
+        "ID": "CB_M3_SALINE_1MPI",
+        "SM": "CB_M3_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M3_SALINE",
+        "LB": "CB_M3_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M4_LEUC":{
+    "CB_M4_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M4_1_BR_LEUC_C3_WGMRS_A41006_232CW2LT4_GAGCTGTATA_L005_R1_001",
         "fq2": "CB_M4_1_BR_LEUC_C3_WGMRS_A41006_232CW2LT4_GAGCTGTATA_L005_R2_001",
-        "fq_R1": "CB_M4_LEUC_R1",
-        "fq_R2": "CB_M4_LEUC_R2",
-        "ID": "CB_M4_LEUC",
-        "SM": "CB_M4_LEUC",
+        "fq_R1": "CB_M4_LEUC_1MPI_R1",
+        "fq_R2": "CB_M4_LEUC_1MPI_R2",
+        "ID": "CB_M4_LEUC_1MPI",
+        "SM": "CB_M4_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M4_LEUC",
+        "LB": "CB_M4_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M4_MTX":{
+    "CB_M4_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M4_1_BR_MTX_C2_WGMRS_A41005_232CW2LT4_CCTGCTGGAA_L005_R1_001",
         "fq2": "CB_M4_1_BR_MTX_C2_WGMRS_A41005_232CW2LT4_CCTGCTGGAA_L005_R2_001",
-        "fq_R1": "CB_M4_MTX_R1",
-        "fq_R2": "CB_M4_MTX_R2",
-        "ID": "CB_M4_MTX",
-        "SM": "CB_M4_MTX",
+        "fq_R1": "CB_M4_MTX_1MPI_R1",
+        "fq_R2": "CB_M4_MTX_1MPI_R2",
+        "ID": "CB_M4_MTX_1MPI",
+        "SM": "CB_M4_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M4_MTX",
+        "LB": "CB_M4_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M4_MTXLEUC":{
+    "CB_M4_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M4_1_BR_MTXLEUC_C4_WGMRS_A41016_232CW2LT4_GCGCGTAGTT_L005_R1_001",
         "fq2": "CB_M4_1_BR_MTXLEUC_C4_WGMRS_A41016_232CW2LT4_GCGCGTAGTT_L005_R2_001",
-        "fq_R1": "CB_M4_MTXLEUC_R1",
-        "fq_R2": "CB_M4_MTXLEUC_R2",
-        "ID": "CB_M4_MTXLEUC",
-        "SM": "CB_M4_MTXLEUC",
+        "fq_R1": "CB_M4_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M4_MTXLEUC_1MPI_R2",
+        "ID": "CB_M4_MTXLEUC_1MPI",
+        "SM": "CB_M4_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M4_MTXLEUC",
+        "LB": "CB_M4_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M4_SALINE":{
+    "CB_M4_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M4_1_BR_SALINE_C1_WGMRS_A41003_232CW2LT4_TGACTCAGAA_L005_R1_001",
         "fq2": "CB_M4_1_BR_SALINE_C1_WGMRS_A41003_232CW2LT4_TGACTCAGAA_L005_R2_001",
-        "fq_R1": "CB_M4_SALINE_R1",
-        "fq_R2": "CB_M4_SALINE_R2",
-        "ID": "CB_M4_SALINE",
-        "SM": "CB_M4_SALINE",
+        "fq_R1": "CB_M4_SALINE_1MPI_R1",
+        "fq_R2": "CB_M4_SALINE_1MPI_R2",
+        "ID": "CB_M4_SALINE_1MPI",
+        "SM": "CB_M4_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M4_SALINE",
+        "LB": "CB_M4_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M5_LEUC":{
+    "CB_M5_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M5_1_BR_LEUC_C4_WGMRS_A41014_232CW2LT4_CAGAAGATGG_L005_R1_001",
         "fq2": "CB_M5_1_BR_LEUC_C4_WGMRS_A41014_232CW2LT4_CAGAAGATGG_L005_R2_001",
-        "fq_R1": "CB_M5_LEUC_R1",
-        "fq_R2": "CB_M5_LEUC_R2",
-        "ID": "CB_M5_LEUC",
-        "SM": "CB_M5_LEUC",
+        "fq_R1": "CB_M5_LEUC_1MPI_R1",
+        "fq_R2": "CB_M5_LEUC_1MPI_R2",
+        "ID": "CB_M5_LEUC_1MPI",
+        "SM": "CB_M5_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M5_LEUC",
+        "LB": "CB_M5_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M5_MTX":{
+    "CB_M5_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M5_1_BR_MTX_C2_WGMRS_A40829_232CW2LT4_ATCCTTGTAC_L005_R1_001",
         "fq2": "CB_M5_1_BR_MTX_C2_WGMRS_A40829_232CW2LT4_ATCCTTGTAC_L005_R2_001",
-        "fq_R1": "CB_M5_MTX_R1",
-        "fq_R2": "CB_M5_MTX_R2",
-        "ID": "CB_M5_MTX",
-        "SM": "CB_M5_MTX",
+        "fq_R1": "CB_M5_MTX_1MPI_R1",
+        "fq_R2": "CB_M5_MTX_1MPI_R2",
+        "ID": "CB_M5_MTX_1MPI",
+        "SM": "CB_M5_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M5_MTX",
+        "LB": "CB_M5_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M5_MTXLEUC":{
+    "CB_M5_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M5_1_BR_MTXLEUC_C3_WGMRS_A41004_232CW2LT4_CGATCTCAGG_L005_R1_001",
         "fq2": "CB_M5_1_BR_MTXLEUC_C3_WGMRS_A41004_232CW2LT4_CGATCTCAGG_L005_R2_001",
-        "fq_R1": "CB_M5_MTXLEUC_R1",
-        "fq_R2": "CB_M5_MTXLEUC_R2",
-        "ID": "CB_M5_MTXLEUC",
-        "SM": "CB_M5_MTXLEUC",
+        "fq_R1": "CB_M5_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M5_MTXLEUC_1MPI_R2",
+        "ID": "CB_M5_MTXLEUC_1MPI",
+        "SM": "CB_M5_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M5_MTXLEUC",
+        "LB": "CB_M5_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M5_SALINE":{
+    "CB_M5_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M5_1_BR_SALINE_C1_WGMRS_A40809_232CW2LT4_AGAACAGTGA_L005_R1_001",
         "fq2": "CB_M5_1_BR_SALINE_C1_WGMRS_A40809_232CW2LT4_AGAACAGTGA_L005_R2_001",
-        "fq_R1": "CB_M5_SALINE_R1",
-        "fq_R2": "CB_M5_SALINE_R2",
-        "ID": "CB_M5_SALINE",
-        "SM": "CB_M5_SALINE",
+        "fq_R1": "CB_M5_SALINE_1MPI_R1",
+        "fq_R2": "CB_M5_SALINE_1MPI_R2",
+        "ID": "CB_M5_SALINE_1MPI",
+        "SM": "CB_M5_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M5_SALINE",
+        "LB": "CB_M5_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M6_LEUC":{
+    "CB_M6_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M6_1_BR_LEUC_C1_WGMRS_A40804_232CW2LT4_TTGTTGCAGA_L005_R1_001",
         "fq2": "CB_M6_1_BR_LEUC_C1_WGMRS_A40804_232CW2LT4_TTGTTGCAGA_L005_R2_001",
-        "fq_R1": "CB_M6_LEUC_R1",
-        "fq_R2": "CB_M6_LEUC_R2",
-        "ID": "CB_M6_LEUC",
-        "SM": "CB_M6_LEUC",
+        "fq_R1": "CB_M6_LEUC_1MPI_R1",
+        "fq_R2": "CB_M6_LEUC_1MPI_R2",
+        "ID": "CB_M6_LEUC_1MPI",
+        "SM": "CB_M6_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M6_LEUC",
+        "LB": "CB_M6_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M6_MTX":{
+    "CB_M6_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M6_1_BR_MTX_C3_WGMRS_A40836_232CW2LT4_GTCAGTGCAG_L005_R1_001",
         "fq2": "CB_M6_1_BR_MTX_C3_WGMRS_A40836_232CW2LT4_GTCAGTGCAG_L005_R2_001",
-        "fq_R1": "CB_M6_MTX_R1",
-        "fq_R2": "CB_M6_MTX_R2",
-        "ID": "CB_M6_MTX",
-        "SM": "CB_M6_MTX",
+        "fq_R1": "CB_M6_MTX_1MPI_R1",
+        "fq_R2": "CB_M6_MTX_1MPI_R2",
+        "ID": "CB_M6_MTX_1MPI",
+        "SM": "CB_M6_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M6_MTX",
+        "LB": "CB_M6_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M6_MTXLEUC":{
+    "CB_M6_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M6_1_BR_MTXLEUC_C4_WGMRS_A41002_232CW2LT4_GGCACAACCT_L005_R1_001",
         "fq2": "CB_M6_1_BR_MTXLEUC_C4_WGMRS_A41002_232CW2LT4_GGCACAACCT_L005_R2_001",
-        "fq_R1": "CB_M6_MTXLEUC_R1",
-        "fq_R2": "CB_M6_MTXLEUC_R2",
-        "ID": "CB_M6_MTXLEUC",
-        "SM": "CB_M6_MTXLEUC",
+        "fq_R1": "CB_M6_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M6_MTXLEUC_1MPI_R2",
+        "ID": "CB_M6_MTXLEUC_1MPI",
+        "SM": "CB_M6_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M6_MTXLEUC",
+        "LB": "CB_M6_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M6_SALINE":{
+    "CB_M6_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M6_1_BR_SALINE_C2_WGMRS_A40835_232CW2LT4_AAGACTACAC_L005_R1_001",
         "fq2": "CB_M6_1_BR_SALINE_C2_WGMRS_A40835_232CW2LT4_AAGACTACAC_L005_R2_001",
-        "fq_R1": "CB_M6_SALINE_R1",
-        "fq_R2": "CB_M6_SALINE_R2",
-        "ID": "CB_M6_SALINE",
-        "SM": "CB_M6_SALINE",
+        "fq_R1": "CB_M6_SALINE_1MPI_R1",
+        "fq_R2": "CB_M6_SALINE_1MPI_R2",
+        "ID": "CB_M6_SALINE_1MPI",
+        "SM": "CB_M6_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M6_SALINE",
+        "LB": "CB_M6_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M7_LEUC":{
+    "CB_M7_LEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M7_1_BR_LEUC_C3_WGMRS_A40999_232CW2LT4_AGAGAGATAG_L005_R1_001",
         "fq2": "CB_M7_1_BR_LEUC_C3_WGMRS_A40999_232CW2LT4_AGAGAGATAG_L005_R2_001",
-        "fq_R1": "CB_M7_LEUC_R1",
-        "fq_R2": "CB_M7_LEUC_R2",
-        "ID": "CB_M7_LEUC",
-        "SM": "CB_M7_LEUC",
+        "fq_R1": "CB_M7_LEUC_1MPI_R1",
+        "fq_R2": "CB_M7_LEUC_1MPI_R2",
+        "ID": "CB_M7_LEUC_1MPI",
+        "SM": "CB_M7_LEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M7_LEUC",
+        "LB": "CB_M7_LEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M7_MTX":{
+    "CB_M7_MTX_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M7_1_BR_MTX_C1_WGMRS_A40810_232CW2LT4_GCTCTTATTG_L005_R1_001",
         "fq2": "CB_M7_1_BR_MTX_C1_WGMRS_A40810_232CW2LT4_GCTCTTATTG_L005_R2_001",
-        "fq_R1": "CB_M7_MTX_R1",
-        "fq_R2": "CB_M7_MTX_R2",
-        "ID": "CB_M7_MTX",
-        "SM": "CB_M7_MTX",
+        "fq_R1": "CB_M7_MTX_1MPI_R1",
+        "fq_R2": "CB_M7_MTX_1MPI_R2",
+        "ID": "CB_M7_MTX_1MPI",
+        "SM": "CB_M7_MTX_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M7_MTX",
+        "LB": "CB_M7_MTX_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M7_SALINE":{
+    "CB_M7_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M7_1_BR_SALINE_C2_WGMRS_A40839_232CW2LT4_TCAGATTAGG_L005_R1_001",
         "fq2": "CB_M7_1_BR_SALINE_C2_WGMRS_A40839_232CW2LT4_TCAGATTAGG_L005_R2_001",
-        "fq_R1": "CB_M7_SALINE_R1",
-        "fq_R2": "CB_M7_SALINE_R2",
-        "ID": "CB_M7_SALINE",
-        "SM": "CB_M7_SALINE",
+        "fq_R1": "CB_M7_SALINE_1MPI_R1",
+        "fq_R2": "CB_M7_SALINE_1MPI_R2",
+        "ID": "CB_M7_SALINE_1MPI",
+        "SM": "CB_M7_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M7_SALINE",
+        "LB": "CB_M7_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M8_MTXLEUC":{
+    "CB_M8_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M8_1_BR_MTXLEUC_C1_WGMRS_A40811_232CW2LT4_TGTAGACGAA_L005_R1_001",
         "fq2": "CB_M8_1_BR_MTXLEUC_C1_WGMRS_A40811_232CW2LT4_TGTAGACGAA_L005_R2_001",
-        "fq_R1": "CB_M8_MTXLEUC_R1",
-        "fq_R2": "CB_M8_MTXLEUC_R2",
-        "ID": "CB_M8_MTXLEUC",
-        "SM": "CB_M8_MTXLEUC",
+        "fq_R1": "CB_M8_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M8_MTXLEUC_1MPI_R2",
+        "ID": "CB_M8_MTXLEUC_1MPI",
+        "SM": "CB_M8_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M8_MTXLEUC",
+        "LB": "CB_M8_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M8_SALINE":{
+    "CB_M8_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M8_1_BR_SALINE_C2_WGMRS_A40833_232CW2LT4_CCTTGACTGC_L005_R1_001",
         "fq2": "CB_M8_1_BR_SALINE_C2_WGMRS_A40833_232CW2LT4_CCTTGACTGC_L005_R2_001",
-        "fq_R1": "CB_M8_SALINE_R1",
-        "fq_R2": "CB_M8_SALINE_R2",
-        "ID": "CB_M8_SALINE",
-        "SM": "CB_M8_SALINE",
+        "fq_R1": "CB_M8_SALINE_1MPI_R1",
+        "fq_R2": "CB_M8_SALINE_1MPI_R2",
+        "ID": "CB_M8_SALINE_1MPI",
+        "SM": "CB_M8_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M8_SALINE",
+        "LB": "CB_M8_SALINE_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M9_MTXLEUC":{
+    "CB_M9_MTXLEUC_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M9_1_BR_MTXLEUC_C2_WGMRS_A41017_232CW2LT4_GTTGTCTGCG_L005_R1_001",
         "fq2": "CB_M9_1_BR_MTXLEUC_C2_WGMRS_A41017_232CW2LT4_GTTGTCTGCG_L005_R2_001",
-        "fq_R1": "CB_M9_MTXLEUC_R1",
-        "fq_R2": "CB_M9_MTXLEUC_R2",
-        "ID": "CB_M9_MTXLEUC",
-        "SM": "CB_M9_MTXLEUC",
+        "fq_R1": "CB_M9_MTXLEUC_1MPI_R1",
+        "fq_R2": "CB_M9_MTXLEUC_1MPI_R2",
+        "ID": "CB_M9_MTXLEUC_1MPI",
+        "SM": "CB_M9_MTXLEUC_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M9_MTXLEUC",
+        "LB": "CB_M9_MTXLEUC_1MPI",
         "PL": "Illumina"
         },
 
-    "CB_M9_SALINE":{
+    "CB_M9_SALINE_1MPI":{
         "fq_path": "/tgen_labs/jfryer/projects/chemobrain/1MPI/bulkRNA/",
         "fq1": "CB_M9_1_BR_SALINE_C1_WGMRS_A40800_232CW2LT4_TCGAAGTCAA_L005_R1_001",
         "fq2": "CB_M9_1_BR_SALINE_C1_WGMRS_A40800_232CW2LT4_TCGAAGTCAA_L005_R2_001",
-        "fq_R1": "CB_M9_SALINE_R1",
-        "fq_R2": "CB_M9_SALINE_R2",
-        "ID": "CB_M9_SALINE",
-        "SM": "CB_M9_SALINE",
+        "fq_R1": "CB_M9_SALINE_1MPI_R1",
+        "fq_R2": "CB_M9_SALINE_1MPI_R2",
+        "ID": "CB_M9_SALINE_1MPI",
+        "SM": "CB_M9_SALINE_1MPI",
         "PU": "232CW2LT4.5",
-        "LB": "CB_M9_SALINE",
+        "LB": "CB_M9_SALINE_1MPI",
         "PL": "Illumina"
         }
 }

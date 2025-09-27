@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 # create a new output file
-outfile = open('config.json', 'w')
+outfile = open('config_1MPI.json', 'w')
 
 # get all sample names
 allSamples = list()
 numSamples = 0
 
-with open('sampleReadGroupInfo.txt', 'r') as infile:
+with open('sampleReadGroupInfo_1MPI.txt', 'r') as infile:
     for line in infile:
         numSamples += 1
 
@@ -16,7 +16,7 @@ with open('sampleReadGroupInfo.txt', 'r') as infile:
         sampleAttributes = split[0].split('_')  # CB_0001M_1_BR_Saline_C1_WGMRS_A36166_23377MLT3_GTACAACGAA_L002_R1_001.fastq.gz
                                                 #  E1_BR.FCHVC2VDRXY_L1_R1_ITAAGTGGT-CTTAAGCC.fastq.gz pigID_tissue.sequencer_lane_read_X-X.fastq.gz
         # create a shorter sample name
-        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[4] # CB_0001M_Saline
+        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[4] + '_' + '1MPI' # CB_0001M_Saline
         allSamples.append(stemName)
 
 # create header and write to outfile
@@ -41,7 +41,7 @@ outfile.write(header.format(allSamples))
 
 # config formatting
 counter = 0
-with open('sampleReadGroupInfo.txt', 'r') as infile:
+with open('sampleReadGroupInfo_1MPI.txt', 'r') as infile:
     for line in infile:
         counter += 1
         # store sample name and info from the fastq file
@@ -59,7 +59,7 @@ with open('sampleReadGroupInfo.txt', 'r') as infile:
         sampleAttributes = split[0].split('_')  # project_uniqueNum_1_tissue_group_XX_XX_sequencer_adapter_lane_read_001.fastq.gz
 
         # create a shorter sample name
-        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[4] # CB_0001M_Saline
+        stemName = sampleAttributes[0] + '_' + sampleAttributes[1] + '_' + sampleAttributes[4]  + '_' + '1MPI' # CB_0001M_Saline
         shortName1 = stemName + '_R1'
         shortName2 = stemName + '_R2'
 
